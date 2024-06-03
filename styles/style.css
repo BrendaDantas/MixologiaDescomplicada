@@ -11,7 +11,7 @@ body {
 }
 
 .cabecalho {
-    background-color: #afd198;
+    background-color: #000000;
     padding: 1%;
 }
 
@@ -26,6 +26,7 @@ body {
     font-family: "Krona One", sans-serif;
     font-weight: 400;
     font-size: 2rem;
+    color: #afd198;
 }
 
 .cabecalho__menu__link {
@@ -33,4 +34,9 @@ body {
     padding: 2% 0% 0% 0%;
     font-family: "Montserrat", sans-serif;
     font-weight: 600;
+    color: #afd198;
+}
+
+.cabecalho__menu__link:hover {
+    color: #1a4d2e;
 }
