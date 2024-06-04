@@ -26,7 +26,7 @@ body {
     font-family: "Krona One", sans-serif;
     font-weight: 400;
     font-size: 2rem;
-    color: #afd198;
+    color: #ebf400;
 }
 
 .cabecalho__menu__link,
@@ -35,7 +35,7 @@ body {
     margin: 2% 0% 2% 0%;
     font-family: "Montserrat", sans-serif;
     font-weight: 600;
-    color: #afd198;
+    color: #ebf400;
 }
 
 .cabecalho__menu__link__icone {
