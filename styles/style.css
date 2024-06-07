@@ -48,6 +48,61 @@ body {
     color: #1a4d2e;
 }
 
+/*media queries*/
+@media (max-width: 1024) {
+    .cabecalho__menu {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 1rem;
+    }
+
+    .cabecalho__menu__link,
+    .cabecalho__menu__link__icone {
+        margin: 0.5rem 0;
+    }
+
+    .cabecalho__menu__link__icone {
+        margin: 0.5rem 0 0 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .cabecalho__menu {
+        gap: 1rem;
+    }
+
+    .logo__cabecalho {
+        font-size: 1.5rem;
+    }
+
+    .cabecalho__menu__link,
+    .cabecalho__menu__link__icone {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .cabecalho__menu {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    .logo__cabecalho {
+        font-size: 1.2rem;
+    }
+
+    .cabecalho__menu__link,
+    .cabecalho__menu__link__icone {
+        font-size: 0.9rem;
+        margin: 0.2rem 0;
+    }
+
+    .cabecalho__menu__link__icone {
+        margin: 0.2rem 0 0 0;
+    }
+}
+
 /*---swiper---*/
 *,
 *::before,
