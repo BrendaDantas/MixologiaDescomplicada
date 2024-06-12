@@ -7,11 +7,11 @@
 
 body {
     box-sizing: border-box;
-    background-color: black !important;
+    background-color: #ffffff !important;
 }
 
 .cabecalho {
-    background-color: #000000;
+    background-color: #ffffff;
     padding: 1%;
 }
 
@@ -27,25 +27,27 @@ body {
     font-family: "Montserrat", sans-serif;
     font-weight: 400;
     font-size: 2rem;
-    color: #ebf400;
+    color: #000000;
 }
 
 .cabecalho__menu__link,
 .cabecalho__menu__link__icone {
     text-decoration: none;
-    margin: 2% 0% 2% 0%;
+    /*margin: 2% 0% 2% 0%;*/
+    padding: 2% 1% 2% 1%;
     font-family: "Montserrat", sans-serif;
-    font-weight: 600;
+    font-weight: 400;
     font-size: 1.3rem;
-    color: #ebf400;
+    color: #000000;
 }
 
 .cabecalho__menu__link__icone {
-    margin: 2% 0% 0% 15%;
+    margin: 2% 0% 0% 10%;
 }
 
 .cabecalho__menu__link:hover {
-    color: #1a4d2e;
+    background-color: #000000;
+    color: #ffffff;
 }
 
 /*media queries*/
