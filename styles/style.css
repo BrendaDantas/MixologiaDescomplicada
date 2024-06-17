@@ -1,4 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+/*@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*/
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 
 * {
     margin: 0;
@@ -19,14 +22,16 @@ body {
     display: flex;
     align-items: center;
     gap: 3rem;
+    font-family: "Montserrat", sans-serif;
 }
 
 .logo__cabecalho {
     margin: 0% 7% 0% 2%;
+    padding: 1%;
+    font-family: "Bebas Neue", sans-serif;
     text-decoration: none;
-    font-family: "Montserrat", sans-serif;
     font-weight: 400;
-    font-size: 2rem;
+    font-size: 3rem;
     color: #000000;
 }
 

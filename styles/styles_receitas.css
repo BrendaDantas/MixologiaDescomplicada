@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 * {
     margin: 0;
@@ -23,10 +23,11 @@ body {
 }
 
 .logo__cabecalho {
-    margin: 0% 2% 0% 2%;
+    margin: 0% 4% 0% 2%;
+    font-family: "Bebas Neue", sans-serif;
     text-decoration: none;
     font-weight: 400;
-    font-size: 2rem;
+    font-size: 3rem;
     color: #000000;
 }
 
@@ -51,12 +52,51 @@ body {
 
 .receitas {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em 1em;
+}
+
+.receita {
+    display: flex;
+    max-width: 1200px;
+    width: 100%;
+    margin-bottom: 2em;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 2em;
 }
 
 .receitas__conteudo {
-    display: flex;
-    flex-direction: column;
+    flex: 1;
+    padding-right: 1em;
+}
+
+.receitas__imagem img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+}
+
+.ingredientes {
+    padding: 0;
+}
+
+.receitas__conteudo__drink {
+    font-size: 2em;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+}
+
+.receitas__conteudo__preparo {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 1em;
+}
+
+.receitas__conteudo__preparo ul,
+.receitas__conteudo__preparo li {
+    font-family: "Montserrat", sans-serif;
+    color: red;
 }
 
 /*media queries*/
