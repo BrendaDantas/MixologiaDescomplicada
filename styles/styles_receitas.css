@@ -131,6 +131,8 @@ body {
     .cabecalho__menu {
         flex-direction: column;
         align-items: center;
+        margin: auto;
+        justify-content: center;
         gap: 0.5rem;
     }
 
@@ -153,6 +155,8 @@ body {
     .receita {
         flex-direction: column;
         align-items: center;
+        margin: auto;
+        justify-content: center;
     }
 
     .receitas__drink {
@@ -164,6 +168,10 @@ body {
     .receitas__conteudo__preparo {
         font-size: 1.2rem;
     }
+
+    ul, ol {
+        padding-left: 2em;
+    }
 }
 
 @media (max-width: 480px) {
@@ -171,5 +179,9 @@ body {
     .receitas__conteudo__ingredientes,
     .receitas__conteudo__preparo {
         font-size: 1rem;
+    }
+
+    ul, ol {
+        padding-left: 2em;
     }
 }
