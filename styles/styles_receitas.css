@@ -59,44 +59,39 @@ body {
 
 .receita {
     display: flex;
-    max-width: 1200px;
+    max-width: 75rem;
     width: 100%;
     margin-bottom: 2em;
     border-bottom: 1px solid #ccc;
     padding-bottom: 2em;
 }
 
-.receitas__conteudo {
+.receitas__drink {
     flex: 1;
-    padding-right: 1em;
+    color: #000000;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
+}
+
+.receitas__conteudo__drink__nome {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-size: 2rem;
+    color: #000000;
+}
+
+.receitas__conteudo__ingredientes,
+.receitas__conteudo__preparo {
+    color: #000000;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-size: 1.4rem;
 }
 
 .receitas__imagem img {
     max-width: 100%;
     height: auto;
     border-radius: 6px;
-}
-
-.ingredientes {
-    padding: 0;
-}
-
-.receitas__conteudo__drink {
-    font-size: 2em;
-    font-family: "Bebas Neue", sans-serif;
-    font-weight: 400;
-}
-
-.receitas__conteudo__preparo {
-    font-family: "Montserrat", sans-serif;
-    font-weight: 400;
-    font-size: 1em;
-}
-
-.receitas__conteudo__preparo ul,
-.receitas__conteudo__preparo li {
-    font-family: "Montserrat", sans-serif;
-    color: red;
 }
 
 /*media queries*/
@@ -151,5 +146,30 @@ body {
 
     .cabecalho__menu__link__icone {
         margin: 0.2rem 0 0 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .receita {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .receitas__drink {
+        text-align: center;
+    }
+
+    .receitas__conteudo__drink__nome,
+    .receitas__conteudo__ingredientes,
+    .receitas__conteudo__preparo {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .receitas__conteudo__drink__nome,
+    .receitas__conteudo__ingredientes,
+    .receitas__conteudo__preparo {
+        font-size: 1rem;
     }
 }
