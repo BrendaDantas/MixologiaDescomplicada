@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meu Drink Ideal</title>
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="styles/style_drink_ideal.css">
 </head>
 <body>
     <header>
@@ -24,7 +24,51 @@
         </nav>
     </header>
     <main>
+        <div class="container">
+            <h1>Meu Drink Ideal</h1>
+            <form action="drink-form">
+                <label for="doceAmargo">Você prefere bebidas mais doces ou amargas?</label>
+                <select name="doceAmargo" id="doceAmargo">
+                    <option value="doce">Doces</option>
+                    <option value="amargo">Amargas</option>
+                    <option value="meioTermo">Nem doce nem amarga</option>
+                </select>
 
+                <label for="citrico">Você gosta de bebidas cítricas?</label>
+                <select name="citrico" id="citrico">
+                    <option value="sim">Sim</option>
+                    <option value="nao">Não</option>
+                </select>
+
+                <label for="forca">Você prefere algo mais forte ou mais leve?</label>
+                <select name="forca" id="forca">
+                    <option value="forte">Forte</option>
+                    <option value="leve">Leve</option>
+                </select>
+
+                <label for="gas">Você gosta de bebidas gaseificadas?</label>
+                <select name="gas" id="gas">
+                    <option value="sim">Sim</option>
+                    <option value="nao">Não</option>
+                </select>
+
+                <label for="frutasFrescas">Você gosta de drinks com frutas frescas?</label>
+                <select name="frutasFrescas" id="frutasFrescas">
+                    <option value="sim">Sim</option>
+                    <option value="nao">Não</option>
+                </select>
+
+                <label for="estilo">Você prefere um coquetel clássico ou algo mais moderno?</label>
+                <select name="estilo" id="estilo">
+                    <option value="classico">Clássico</option>
+                    <option value="moderno">Moderno</option>
+                </select>
+
+                <button type="button" onclick="recommendDrink()">Enviar</button>
+            </form>
+            <div id="resultado"></div>
+        </div>
+        <script src="./scripts/script.js"></script>
     </main>
     <footer>
 

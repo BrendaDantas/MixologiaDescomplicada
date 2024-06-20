@@ -50,50 +50,6 @@ body {
     color: #ffffff;
 }
 
-.receitas {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 2em 1em;
-}
-
-.receita {
-    display: flex;
-    max-width: 75rem;
-    width: 100%;
-    margin-bottom: 2em;
-    border-bottom: 1px solid #ccc;
-    padding-bottom: 2em;
-}
-
-.receitas__drink {
-    flex: 1;
-    color: #000000;
-    font-family: "Montserrat", sans-serif;
-    font-size: 1rem;
-}
-
-.receitas__conteudo__drink__nome {
-    font-family: "Bebas Neue", sans-serif;
-    font-weight: 400;
-    font-size: 2rem;
-    color: #000000;
-}
-
-.receitas__conteudo__ingredientes,
-.receitas__conteudo__preparo {
-    color: #000000;
-    font-family: "Bebas Neue", sans-serif;
-    font-weight: 400;
-    font-size: 1.4rem;
-}
-
-.receitas__imagem img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 6px;
-}
-
 /*media queries*/
 @media (max-width: 1024) {
     .cabecalho__menu {
@@ -127,6 +83,36 @@ body {
     }
 }
 
+.container {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    margin: 10px 0 5px;
+}
+
+select, button {
+    margin: 10px 0;
+    padding: 10px;
+    width: 50%;
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+/*MEDIA QUERIES CABEÇALHO*/
+
 @media (max-width: 480px) {
     .cabecalho__menu {
         flex-direction: column;
@@ -148,42 +134,5 @@ body {
 
     .cabecalho__menu__link__icone {
         margin: 0.2rem 0 0 0;
-    }
-}
-
-/*MEDIA QUERIES RECEITAS*/
-
-@media (max-width: 768px) {
-    .receita {
-        flex-direction: column;
-        align-items: center;
-        margin: auto;
-        justify-content: center;
-    }
-
-    .receitas__drink {
-        text-align: center;
-    }
-
-    .receitas__conteudo__drink__nome,
-    .receitas__conteudo__ingredientes,
-    .receitas__conteudo__preparo {
-        font-size: 1.2rem;
-    }
-
-    ul, ol {
-        padding-left: 2em;
-    }
-}
-
-@media (max-width: 480px) {
-    .receitas__conteudo__drink__nome,
-    .receitas__conteudo__ingredientes,
-    .receitas__conteudo__preparo {
-        font-size: 1rem;
-    }
-
-    ul, ol {
-        padding-left: 2em;
     }
 }
