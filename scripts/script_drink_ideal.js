@@ -6,7 +6,38 @@ function recommendDrink() {
     const gas = document.getElementById('gas').value;
     const frutasFrescas = document.getElementById('frutasFrescas').value;
     
-    const drinksData = {
+    let drinks = [];
+
+    if (sabor === "doce") {
+        if (citrico === "sim") {
+            if (forcaBebida === "forte") {
+                if (gas === "sim") {
+                    if (frutasFrescas === "sim") {
+                        drinks.push("Mojito de Frutas");
+                    } else {
+                        drinks.push("French 75");
+                    }
+                } else {
+                    if (frutasFrescas === "sim") {
+                        drinks.push("Daiquiri de Frutas");
+                    } else {
+                        drinks.push("Sidecar");
+                    }
+                }
+            } else {
+                if (gas === "sim") {
+                    if (frutasFrescas === "sim") {
+                        drinks.push("Mojito");
+                    } else {
+                        drinks.push("Gin Fizz");
+                    }
+                }
+            }
+        }
+    }
+
+
+    /*const drinksData = {
         doce: ["Tequila Sunrise", "Mojito", "Piña Colada", "Cosmopolitan", "Daiquiri", "Mai Tai", "Sex on the Beach", "Margarita", "Blue Lagoon", "Singapore Sling"],
         amargo: ["Negroni", "Dry Martini", "Americano", "Aperol Spritz", "Boulevardier", "Campari Soda", "Gin Tônica", "Old Fashioned", "Manhattan", "Hanky Panky"],
         neutro: ["Caipirinha", "Moscow Mule", "Bloody Mary", "White Russian", "Black Russian", "Tom Collins", "Long Island Iced Tea", "Whiskey Sour", "Rum Punch", "Pisco Sour"]
@@ -47,10 +78,8 @@ function recommendDrink() {
     } else {
         drinks = drinks.filter(drink => semFrutasFrescasDrinks.includes(drink));
     }
-   
-    if (drinks.length === 0) {
-        drinks.push("Gin Tônica"); // Bebida padrão se nenhuma outra combinação funcionar
-    }
+   */
+    
 
     document.getElementById("resultado").textContent = `Seus drinks ideais são: ${drinks.join(', ')}`;
 }
