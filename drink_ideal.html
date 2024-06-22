@@ -25,7 +25,7 @@
     </header>
     <main>
         <div class="container">
-            <h1>Meu Drink Ideal</h1>
+            <h2 class="apresentacao">Preencha o formulário abaixo e descubra drinks que mais combinam com seu paladar!</h2>
             <form action="drink-form">
                 <label for="sabor">Você prefere bebidas mais doces ou amargas?</label>
                 <select name="sabor" id="sabor">
@@ -59,8 +59,9 @@
                 </select>
 
                 <button type="button" onclick="recommendDrink()">Enviar</button>
+                <div id="resultado"></div>
             </form>
-            <div id="resultado"></div>
+            
         </div>
         <script src="./scripts/script_drink_ideal.js"></script>
     </main>
