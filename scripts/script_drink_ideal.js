@@ -31,6 +31,42 @@ function recommendDrink() {
                     } else {
                         drinks.push("Gin Fizz");
                     }
+                } else {
+                    if (frutasFrescas === "sim") {
+                        drinks.push("Caipirinha")
+                    } else {
+                        drinks.push("Tequila Sunrise", "Daiquiri");
+                    }
+                }
+            }
+        } else {
+            if (forcaBebida === "forte") {
+                if (gas === "sim") {
+                    if (frutasFrescas === "sim") {
+                        drinks.push("Sparkling Berry Rum Punch");
+                    } else {
+                        drinks.push("Sparkling Old Fashioned");
+                    }
+                } else {
+                    if (frutasFrescas === "sim") {
+                        drinks.push("Brandy Sangria");
+                    } else {
+                        drinks.push("Cosmopolitan", "Mai Tai");
+                    }
+                }
+            } else {
+                if (gas === "sim") {
+                    if (frutasFrescas === "sim") {
+                        drinks.push("Sparkling Moscato Berry Punch");
+                    } else {
+                        drinks.push("Blue Lagoon");
+                    }
+                } else {
+                    if (frutasFrescas === "sim") {
+                        drinks.push("Sangria Moscato");
+                    } else {
+                        drinks.push("Piña Colada", "Sex on the Beach");
+                    }
                 }
             }
         }
