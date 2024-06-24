@@ -25,5 +25,13 @@
     "age": 25,
     "email": "fulaninha@example.com",
     "password": "senha333"
+  },
+  {
+    "id": "593dbc5c-cbe3-4be8-be24-b348a7229b5a",
+    "name": "Fulana de Tal",
+    "cpf": "98745674655",
+    "age": "26",
+    "email": "fulanadetal@email.com",
+    "password": "senha765"
   }
 ]
