@@ -28,6 +28,6 @@ document.getElementById('quiz-form').addEventListener('submit', function(event) 
 
 function logout() {
     localStorage.removeItem('user');
-    alert('Você saiu com sucesso.');
+    //alert('Você saiu com sucesso.');
     window.location.href = 'index.html';
 }

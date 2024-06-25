@@ -1,5 +1,10 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Montessat", sans-serif;
     background-color: #f8f8f8;
     margin: 0;
     padding: 0;
@@ -7,7 +12,7 @@ body {
 
 .cabecalho {
     background-color: #333;
-    color: white;
+    color: #ffffff;
     padding: 10px 0;
     text-align: center;
 }
@@ -21,31 +26,43 @@ body {
     padding: 0 20px;
 }
 
+.cabecalho__menu__links {
+    flex-grow: 1;
+    justify-content: center;
+    gap: 20px;
+}
+
 .cabecalho__menu__link, .cabecalho__menu__link__icone, #logout-button {
-    color: white;
+    color: #ffffff;
     text-decoration: none;
     margin: 0 10px;
     cursor: pointer;
 }
 
-.cabecalho__menu__link__icone img, #logout-button {
-    height: 24px;
+.cabecalho__menu__link__icone img {
+    height: 20px;
 }
 
 #logout-button {
     background-color: transparent;
     border: none;
     cursor: pointer;
-    color: white;
+    color: #ffffff;
     font-size: 16px;
+    padding: 10px 20px;
     margin-left: auto;
+    transition: background-color 0.3s;
+}
+
+#logout-button:hover {
+    background-color: #ff0000;
 }
 
 main {
     max-width: 800px;
     margin: 20px auto;
     padding: 20px;
-    background-color: white;
+    background-color: #ffffff;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -73,7 +90,7 @@ button[type="submit"] {
     width: 100%;
     padding: 10px;
     background-color: #333;
-    color: white;
+    color: #ffffff;
     border: none;
     border-radius: 4px;
     font-size: 16px;
@@ -92,3 +109,128 @@ button[type="submit"]:hover {
     font-weight: bold;
     color: #333;
 }
+
+/*--- MEDIA QUERIES --- */
+@media (max-width: 1024) {
+    .cabecalho__menu {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 1rem;
+    }
+
+    .cabecalho__menu__link,
+    .cabecalho__menu__link__icone {
+        margin: 0.5rem 0;
+    }
+
+    .cabecalho__menu__link__icone {
+        margin: 0.5rem 0 0 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .cabecalho__menu {
+        gap: 1rem;
+    }
+
+    .logo__cabecalho {
+        font-size: 1.5rem;
+    }
+
+    .cabecalho__menu__link,
+    .cabecalho__menu__link__icone {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .cabecalho__menu {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    .logo__cabecalho {
+        font-size: 1.2rem;
+    }
+
+    .cabecalho__menu__link,
+    .cabecalho__menu__link__icone {
+        font-size: 0.9rem;
+        margin: 0.2rem 0;
+    }
+
+    .cabecalho__menu__link__icone {
+        margin: 0.2rem 0 0 0;
+    }
+}
+
+@media (max-width: 1024px) {
+    #logout-button {
+        font-size: 15px;
+        padding: 8px 18px;
+    }
+
+    main {
+        max-width: 700px;
+        margin: 15px auto;
+        padding: 15px;
+    }
+
+    button[type="submit"] {
+        padding: 8px;
+        font-size: 15px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    #logout-button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    main {
+        max-width: 600px;
+        margin: 10px auto;
+        padding: 10px;
+    }
+
+    button[type="submit"] {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 480px) {
+    #logout-button {
+        font-size: 12px;
+        padding: 6px 12px;
+        margin-left: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    main {
+        max-width: 90%;
+        margin: 10px auto;
+        padding: 10px;
+    }
+
+    button[type="submit"] {
+        padding: 6px;
+        font-size: 12px;
+    }
+
+    h1 {
+        font-size: 1.2rem;
+    }
+}
+

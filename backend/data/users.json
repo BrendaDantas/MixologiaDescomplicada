@@ -6,5 +6,21 @@
     "age": "24",
     "email": "pessoa1@email.com",
     "password": "pessoa1"
+  },
+  {
+    "id": "8531af76-579c-4abd-9d69-3472e3befe2a",
+    "name": "Teste",
+    "cpf": "12345678910",
+    "age": "25",
+    "email": "teste@email.com",
+    "password": "teste"
+  },
+  {
+    "id": "e5b62b2e-feeb-4942-a36c-a2ec073a807e",
+    "name": "Fulana",
+    "cpf": "12345678998",
+    "age": "32",
+    "email": "fulana@email.com",
+    "password": "fulana"
   }
 ]
