@@ -353,3 +353,88 @@ body {
 }
 
 /*---FIM DO SWIPER---*/
+
+/*---CURIOSIDADES---*/
+#curiosidades_drinks {
+    background-color: #f9f9f9;
+    padding: 40px 0;
+    font-family: 'Arial', sans-serif;
+}
+
+#curiosidades_drinks .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+#curiosidades_drinks h2 {
+    text-align: center;
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+#curiosidades_drinks .curiosidades {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+#curiosidades_drinks .curiosidades h3 {
+    font-size: 1.8em;
+    color: #d9534f;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #d9534f;
+    padding-bottom: 5px;
+}
+
+#curiosidades_drinks .curiosidades h4 {
+    font-size: 1.2em;
+    color: #555;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+#curiosidades_drinks .curiosidades p {
+    font-size: 0.9em;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+#curiosidades_drinks .curiosidades a {
+    color: #d9534f;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+#curiosidades_drinks .curiosidades a:hover {
+    color: #c9302c;
+}
+
+@media (max-width: 768px) {
+    #curiosidades_drinks h2 {
+        font-size: 2em;
+    }
+
+    #curiosidades_drinks .curiosidades {
+        padding: 15px;
+    }
+
+    #curiosidades_drinks .curiosidades h3 {
+        font-size: 1.6em;
+    }
+
+    #curiosidades_drinks .curiosidades h4 {
+        font-size: 1.2em;
+    }
+
+    #curiosidades_drinks .curiosidades p {
+        font-size: 0.9em;
+    }
+}
