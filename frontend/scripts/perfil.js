@@ -9,6 +9,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
 function logout() {
     localStorage.removeItem('user');
-    alert('Você saiu com sucesso.');
+    //alert('Você saiu com sucesso.');
     window.location.href = 'index.html'; // Redireciona para a página inicial após logout
 }

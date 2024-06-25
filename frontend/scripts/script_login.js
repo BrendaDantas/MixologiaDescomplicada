@@ -81,7 +81,7 @@ document.getElementById('login-form').addEventListener('submit', async (event) =
 
         const result = await response.json();
         if (response.ok) {
-            alert('Login bem-sucedido!');
+            //alert('Login bem-sucedido!');
             localStorage.setItem('user', JSON.stringify({ id: result.userId, name: result.name }));
             window.location.href = 'perfil.html';
             /*closeModal('modal-login');

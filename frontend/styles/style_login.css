@@ -97,3 +97,21 @@
 .modal p a:hover {
     text-decoration: underline;
 }
+
+/*---BOTÃO DE LOGOUT---*/
+#logout-button {
+    font-family: "Montserrat", sans-serif;
+    background-color: #f44336; /* Cor do botão */
+    color: white; /* Cor do texto */
+    padding: 10px 20px; /* Espaçamento interno */
+    border: none; /* Sem borda */
+    border-radius: 5px; /* Bordas arredondadas */
+    cursor: pointer; /* Cursor de mãozinha */
+    position: absolute; /* Posicionamento absoluto */
+    right: 30px; /* Distância da borda direita */
+    top: 45px; /* Distância do topo */
+}
+
+#logout-button:hover {
+    background-color: #d32f2f; /* Cor do botão ao passar o mouse */
+}
