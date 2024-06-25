@@ -50,7 +50,7 @@ router.post('/login', (req, res) => {
         return res.status(401).json({ message: 'Credenciais inválidas'});
     }
 
-    res.json({ message: 'Login bem-sucedido', userId: user.id });
+    res.json({ message: 'Login bem-sucedido', userId: user.id, name: user.name });
 });
 
 module.exports = router;

@@ -82,7 +82,10 @@ document.getElementById('login-form').addEventListener('submit', async (event) =
         const result = await response.json();
         if (response.ok) {
             alert('Login bem-sucedido!');
-            closeModal('modal-login');
+            localStorage.setItem('user', JSON.stringify({ id: result.userId, name: result.name }));
+            window.location.href = 'perfil.html';
+            /*closeModal('modal-login');
+            showUserProfile(result.name);*/
         } else {
             alert(result.message);
         }
@@ -91,3 +94,25 @@ document.getElementById('login-form').addEventListener('submit', async (event) =
         alert('Erro ao fazer login. Tente novamente mais tarde.');
     }
 });
+
+/*function showUserProfile(userName) {
+    document.getElementById('user-profile').style.display = 'block';
+    document.getElementById('user-name').textContent = `Bem-vindo, ${userName}`;
+}*/
+
+function logout() {
+    localStorage.removeItem('user');
+    /*document.getElementById('user-profile').style.display = 'none';*/
+    alert('Você saiu com sucesso.');
+    window.location.href = 'index.html';
+}
+
+/*document.addEventListener('DOMContentLoaded', () => {
+    const user = JSON.parse(localStorage.getItem('user'));
+    if (user) {
+        //showUserProfile(user.name);
+        document.getElementById('user-name').textContent = `Bem-vindo, ${user.name}`;
+    } else {
+        window.location.href = 'index.html';
+    }
+});*/
