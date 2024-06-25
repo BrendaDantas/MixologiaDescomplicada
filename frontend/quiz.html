@@ -1,0 +1,107 @@
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mixologia Descomplicada</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/style_login.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <nav class="cabecalho__menu">
+            <a class="logo__cabecalho" href="index.html">
+                Mixologia<br>Descomplicada
+            </a>
+            <a class="cabecalho__menu__link" href="index.html">HOME</a>
+            <a class="cabecalho__menu__link" href="drink_ideal.html">MEU DRINK IDEAL</a>
+            <a class="cabecalho__menu__link" href="receitas.html">RECEITAS</a>
+            <a class="cabecalho__menu__link" href="aprender.html">APRENDER</a>
+            <button id="logout-button" onclick="logout()">Sair</button>
+        </nav>                           
+    </header>
+    <main>
+        <h1>Quiz Básico</h1>
+        <form id="quiz-form">
+            <div class="question">
+                <p>1. Qual é o principal ingrediente alcoólico da caipirinha?</p>
+                <label><input type="radio" name="question1" value="a"> Vodka</label><br>
+                <label><input type="radio" name="question1" value="b"> Rum</label><br>
+                <label><input type="radio" name="question1" value="c"> Cachaça</label><br>
+                <label><input type="radio" name="question1" value="d"> Gin</label>
+            </div>
+            <div class="question">
+                <p>2. Qual é o nome do drink feito com vodka, licor de laranja, suco de cranberry e suco de limão?</p>
+                <label><input type="radio" name="question2" value="a"> Margarita</label><br>
+                <label><input type="radio" name="question2" value="b"> Cosmopolitan</label><br>
+                <label><input type="radio" name="question2" value="c"> Mojito</label><br>
+                <label><input type="radio" name="question2" value="d"> Piña Colada</label>
+            </div>
+            <div class="question">
+                <p>3. Qual é a principal diferença entre um mojito e uma caipirinha?</p>
+                <label><input type="radio" name="question3" value="a"> O uso de rum no mojito e de cachaça na caipirinha</label><br>
+                <label><input type="radio" name="question3" value="b"> O uso de vodka no mojito e de rum na caipirinha</label><br>
+                <label><input type="radio" name="question3" value="c"> O uso de gin no mojito e de vodka na caipirinha</label><br>
+                <label><input type="radio" name="question3" value="d"> O uso de tequila no mojito e de rum na caipirinha</label>
+            </div>
+            <div class="question">
+                <p>4. Qual destes drinks é tradicionalmente servido em uma caneca de cobre?</p>
+                <label><input type="radio" name="question4" value="a"> Moscow Mule</label><br>
+                <label><input type="radio" name="question4" value="b"> Negroni</label><br>
+                <label><input type="radio" name="question4" value="c"> Martini</label><br>
+                <label><input type="radio" name="question4" value="d"> Daiquiri</label>
+            </div>
+            <div class="question">
+                <p>5. Qual é o principal ingrediente alcoólico do drink Margarita?</p>
+                <label><input type="radio" name="question5" value="a"> Vodka</label><br>
+                <label><input type="radio" name="question5" value="b"> Rum</label><br>
+                <label><input type="radio" name="question5" value="c"> Tequila</label><br>
+                <label><input type="radio" name="question5" value="d"> Gin</label>
+            </div>
+            <div class="question">
+                <p>6. Qual fruta é tradicionalmente usada para fazer um Daiquiri?</p>
+                <label><input type="radio" name="question6" value="a"> Abacaxi</label><br>
+                <label><input type="radio" name="question6" value="b"> Morango</label><br>
+                <label><input type="radio" name="question6" value="c"> Limão</label><br>
+                <label><input type="radio" name="question6" value="d"> Maçã</label>
+            </div>
+            <div class="question">
+                <p>7. Qual é a bebida principal do coquetel Pina Colada?</p>
+                <label><input type="radio" name="question7" value="a"> Tequila</label><br>
+                <label><input type="radio" name="question7" value="b"> Rum</label><br>
+                <label><input type="radio" name="question7" value="c"> Vodka</label><br>
+                <label><input type="radio" name="question7" value="d"> Cachaça</label>
+            </div>
+            <div class="question">
+                <p>8. Em que país o drink Negroni foi criado?</p>
+                <label><input type="radio" name="question8" value="a"> Brasil</label><br>
+                <label><input type="radio" name="question8" value="b"> Itália</label><br>
+                <label><input type="radio" name="question8" value="c"> França</label><br>
+                <label><input type="radio" name="question8" value="d"> Estados Unidos</label>
+            </div>
+            <div class="question">
+                <p>9. O que é usado para decorar tradicionalmente um Martini?</p>
+                <label><input type="radio" name="question9" value="a"> Rodela de limão</label><br>
+                <label><input type="radio" name="question9" value="b"> Cereja</label><br>
+                <label><input type="radio" name="question9" value="c"> Azeitona</label><br>
+                <label><input type="radio" name="question9" value="d"> Folha de hortelã</label>
+            </div>
+            <div class="question">
+                <p>10. Qual destes drinks é conhecido por seu sabor de hortelã e lima?</p>
+                <label><input type="radio" name="question10" value="a"> Cosmopolitan</label><br>
+                <label><input type="radio" name="question10" value="b"> Mojito</label><br>
+                <label><input type="radio" name="question10" value="c"> Martini</label><br>
+                <label><input type="radio" name="question10" value="d"> Margarita</label>
+            </div>
+            <button type="submit">Enviar</button>
+        </form>
+        <div id="result"></div>       
+    </main>
+    <footer>
+
+    </footer> 
+
+    <script src="./scripts/script_quiz.js"></script>
+</body>
+</html>
