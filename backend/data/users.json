@@ -1,1 +1,10 @@
-[]
+[
+  {
+    "id": "8f569936-5eae-46d6-84c9-dc83cd6f942e",
+    "name": "Brenda",
+    "cpf": "12345678910",
+    "age": "25",
+    "email": "brenda@email.com",
+    "password": "senha123"
+  }
+]
